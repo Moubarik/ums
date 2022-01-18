@@ -10,7 +10,8 @@
  router.get('/edit/:id', editUser);
  router.post('/update', updateUser);
  router.get('/delete/:id', deleteUser);
-router.post('/saveUser', saveUser)
+router.post('/saveUser', saveUser);
+// router.get('/user/:id', viewUser);
 
 ///ROUTER DEPARTEMENT///
 router.get('/', allDepartements);

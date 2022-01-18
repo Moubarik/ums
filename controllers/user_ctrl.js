@@ -1,6 +1,7 @@
 const { models } = require("../models");
 const user = require("../models/user");
 const departement = require("../models/departement");
+
 const allUsers = async (req, res) => {
   const users = await models.users
   .findAll({
@@ -38,6 +39,22 @@ const saveUser = async (req, res) => {
 
 
 };
+// const viewUser = async (req, res)=> {
+//   try {
+//     const user = await models.users.findOne({
+//       where: {
+//         id: req.params.id,
+//       },
+//     })
+//       return res.render("/views/user", {
+//         user,
+//       });
+//     } catch (error) {
+//       return res.send(error.message);
+//     }
+ 
+  
+// };
 
 const editUser = async (req, res) => {
  try {
